@@ -16,13 +16,14 @@ names = [
     '*.out',
     '*.snm',
     '*.sta',
+    '*.vrb',
     '*.toc'
 ]
 
 # Use flag -a for complete cleanupn
-if (len(sys.argv) > 1 and str(sys.argv[1]) == '-a') or input('Do you want a total clean up? (y/n) ') == 'y':
-    names.append('*.pdf')
-    names.append('*.synctex.gz')
+# if (len(sys.argv) > 1 and str(sys.argv[1]) == '-a') or input('Do you want a total clean up? (y/n) ') == 'y':
+names.append('*.pdf')
+names.append('*.synctex.gz')
 
 print(os.path)
 

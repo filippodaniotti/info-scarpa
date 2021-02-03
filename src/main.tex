@@ -1,29 +1,60 @@
 \documentclass[aspectratio=1610]{beamer}
 \usepackage{style}
+\usetheme{madrid}
+\usecolortheme{default}
+\graphicspath{{./assets/images}}
 
-\title{Studiare la Computer Science}
-\author{Filippo Daniotti}
-% \institute{\texorpdfstring{\tikz{\logomittelab}}{Mittelab A.P.S.}}
+\title{Il Corso di Laurea in Informatica}
+\author{Filippo Daniotti \and Filippo Momesso}
 \date{\today}
+\logo{\includegraphics[height=0.8cm]{logo-small.jpg}}
+\institute[DISI]{Dipartimento di Ingegneria e Scienza dell'Informazione}
 
 % arara: pdflatex: { shell: yes, synctex: yes }
 % arara: latexmk: { clean: partial }
 \begin{document}
 	\begin{frame}[plain]
-		\addtocounter{framenumber}{-1}
+		% \addtocounter{framenumber}{-1}
+		% \begin{figure}
+		% 	\centering
+		% 	\includegraphics[width=0.5\textwidth, keepaspectratio]{logo-unitn.eps}		
+		% \end{figure}
+		% \LARGE{\textsc{Dipartimento di Ingegneria e Scienza dell'Informazione}\\}
+		% \large{\textsc{DISI}\\}
+		% \institute[]{Dipartimento di Ingegneria e Scienza dell'informazione\\}
+		\centering
+		\includegraphics[width=0.5\textwidth, keepaspectratio]{logo-unitn.eps}		
 		\titlepage
 	\end{frame}
 
-	\section{Introduzione}
-		\begin{frame}{Boh fioi bella}
-			
-		\end{frame}
+	\section{Introduzione e formalità}
+	\begin{frame}[fragile]{Che cos'è l'informatica?}
+		\begin{center}
+			\Large{TL;DR}\\
+		\end{center}		
+		È tante cose, dare una definizione precisa ad alta voce lascia interdetto qualsiasi interlocutore. In un certo senso è quasi più utile parlare di cosa \structure{non} è, questo se non altro ci aiuta a non fare assunzioni sbagliate.\\
+		\bigskip
+		\pause
+		Giusto per puntualizzare quelle che sono di certo ovvietà, l'informatica \structure{non} è:
+		\begin{columns}
+			\begin{column}{0.55\textwidth}
+				\begin{itemize}
+					\item l'ECDL 
+					\item hackerare i profili social 
+					\item preparare le crack per i videogiochi 
+					\item riparare i computer \Large{AHHHHHHHH} 
+				\end{itemize}		
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				inserire memino qui sul riparare i computer + esprienza 150h
+			\end{column}
+		\end{columns}
+	\end{frame}
 
-		\begin{frame}{yolo}
-			
-		\end{frame}
+	\begin{frame}{Cosa si studia}
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{frame}
 
-	\section{Falsi miti}
-
-	\section{Cosa troverete}
 \end{document}
