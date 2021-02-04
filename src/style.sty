@@ -2,3 +2,23 @@
 \usepackage[english, italian]{babel}
 
 \usepackage{hyperref}
+
+\usepackage{csquotes}
+
+\usetheme{madrid}
+\usecolortheme{default}
+
+\setbeamersize{text margin left=1.5em, text margin right=1.5em}
+
+% block margins redefinition
+\addtobeamertemplate{block begin}{%
+  \centering\setlength{\textwidth}{0.9\textwidth}%
+}{}
+
+\addtobeamertemplate{block alerted begin}{%
+  \centering\setlength{\textwidth}{0.9\textwidth}%
+}{}
+
+\addtobeamertemplate{block example begin}{%
+  \centering\setlength{\textwidth}{0.9\textwidth}%
+}{}
