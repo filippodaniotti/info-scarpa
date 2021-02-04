@@ -1,31 +1,12 @@
 import os
-import sys
+import io
 import glob
 import shutil
 
 # List of files to be deleted according to name
-names = [
-    '_minted*',
-    '*.pyg',
-    '*.aux',
-    '*.dvi',
-    '*.fdb_latexmk',
-    '*.fls',
-    '*.log',
-    '*.nav',
-    '*.out',
-    '*.snm',
-    '*.sta',
-    '*.vrb',
-    '*.toc'
-]
-
-# Use flag -a for complete cleanupn
-# if (len(sys.argv) > 1 and str(sys.argv[1]) == '-a') or input('Do you want a total clean up? (y/n) ') == 'y':
-names.append('*.pdf')
-names.append('*.synctex.gz')
-
-print(os.path)
+with io.open('./util/names.txt', 'r', encoding='utf8') as f:
+    names = f.read().split('\n')
+f.close()
 
 items = list()
 for name in names:

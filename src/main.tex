@@ -4,23 +4,34 @@
 
 \title{Il Corso di Laurea in Informatica}
 \author{Filippo Daniotti}
-\date{\today}
+\date{6 Febbraio 2021}
 \logo{\includegraphics[height=0.8cm]{logo-small.jpg}}
 \institute[DISI]{Dipartimento di Ingegneria e Scienza dell'Informazione}
+
+% \AtBeginSection[] {
+%   \begin{frame}{Table of Contents}
+%     \tableofcontents[currentsection]
+%   \end{frame}
+% }
 
 % arara: pdflatex: { shell: yes, synctex: yes }
 % arara: latexmk: { clean: partial }
 \begin{document}
 	\begin{frame}[plain]
-		\addtocounter{framenumber}{-1}
+		% \addtocounter{framenumber}{-1}
 		\centering
 		\includegraphics[width=0.5\textwidth, keepaspectratio]{logo-unitn.eps}		
 		\titlepage
 		% \tableofcontents
 	\end{frame}
 
+	\begin{frame}{Table of Contents}
+    \tableofcontents
+  \end{frame}
+
 	\section{Introduzione e contesto}
 	\begin{frame}[fragile]{Che cos'è l'informatica?}
+		\pause
 		\begin{center}
 			\Large{TL;DR}\\
 		\end{center}		
@@ -49,10 +60,19 @@
 	\end{frame}
 
 	\begin{frame}{Daiiii almeno qualcosina per avere un'idea}
-		Secondo Wikipedia:
-		\begin{quote}
-			L'informatica è la scienza che si occupa del trattamento dell'informazione mediante procedure automatizzate[...]
-		\end{quote}
+		% Secondo Wikipedia:
+		% \begin{quote}
+		% 	L'informatica è la scienza che si occupa del trattamento dell'informazione mediante procedure automatizzate[...]
+		% \end{quote}
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\begin{block}{Secondo Wikipedia}
+					\begin{quote}
+						L'informatica è la scienza che si occupa del trattamento dell'informazione mediante procedure automatizzate[...]
+					\end{quote}
+				\end{block}
+			\end{minipage}
+		\end{center}
 		\vfill
 		\onslide<2->{
 			Lista assolutamente non esaustiva di ambiti e branche dell'informatica
@@ -108,6 +128,104 @@
 			\end{center}
 		}
 		}
+	\end{frame}
+
+	\section{Cosa si studia}
+	\begin{frame}{Sguardo veloce al programma}
+		\only<1-2>{
+			Io qui mostrerò il programma del Corso di Laurea proposto dall'Università di Trento.\\
+			\small{\url{https://offertaformativa.unitn.it/it/l/informatica/regolamenti-e-manifesti}}
+		}
+		\vfill
+		\visible<2>{
+			Fate \emph{sempre} riferimento al sito dell'Università che vi interessa.
+		}
+		\only<3>{
+			\centering
+			\includegraphics[width=0.6\textwidth, keepaspectratio]{corsi-1.png}
+		}
+		\only<4>{
+			\centering
+			\includegraphics[width=0.8\textwidth, keepaspectratio]{corsi-2.png}
+		}
+		\only<5->{
+			\begin{columns}
+				\begin{column}{0.4\textwidth}
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.8\textwidth, keepaspectratio]{curr-1.png}
+					\end{figure}
+					\vfill
+					\begin{itemize}
+						\item<7-> Scegliere il percorso di studi è un delirio
+						\item<8-> Internet è il vostro migliore amico
+					\end{itemize}
+				\end{column}
+				\visible<6->{
+					\begin{column}{0.4\textwidth}
+						\centering
+						\includegraphics[width=0.8\textwidth, keepaspectratio]{curr-2.png}
+					\end{column}	
+				}
+				\end{columns}
+		}
+	\end{frame}
+
+	\begin{frame}{Ma c'è poca programmazione :(}
+		\begin{itemize}
+			\item<2-> I corsi incentrati sulla programmazione non sono molti
+			\item<3-> la ragione è semplice: \emph{l'università non mira a insegnarvi a programmare}
+			\item<4-> il motivo è sempre legato al discorso fatto prima
+			\item<5-> avrete comunque modo di fare progetti e imparare molto
+			\item<6-> ma se vi interessa solo quello, ci sono alternative migliori, meno costose e con meno sbatti
+			\begin{itemize}
+				\item<7-> \url{https://www.tecnicosuperiorekennedy.it/}
+				\item<7-> Corsi vari su Udemy e affini
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{E la matematica?}
+		Come avrete notato, di matematica (o affini) ce n'è:
+			\begin{itemize}
+				\item Analisi matematica I, 12 cfu
+				\item Geometria e algebra lineare, 6 cfu
+				\item Fondamenti matematici per l'informatica, 6 cfu
+				\item Probabilità e statistica, 6, cfu
+				\item Logica, 6 cfu
+				\item Fisica, 6 cfu
+			\end{itemize}
+			\pause
+			\vfill
+			\LARGE{NO}
+			\pause
+			però in un certo senso \LARGE{SÌ}
+			\pause
+			però comunque \LARGE{NO}
+			\pause
+			gnnnn diciamo \LARGE{DIPENDE}
+	\end{frame}
+
+	\begin{frame}{Non ho mai \textit{$<$qualsiasi cosa non abbiate mai fatto$>$}, avrò difficoltà?}
+		asdasd
+	\end{frame}
+
+	\section{Come si studia}
+	\begin{frame}{Lezioni}
+		asdasd
+	\end{frame}
+
+	\begin{frame}{Risorse}
+		asdasd
+	\end{frame}
+
+	\begin{frame}{Autonomia}
+		asdasd
+	\end{frame}
+
+	\section{Cosa si fa dopo}
+	\begin{frame}{Tutti lavorano tranne me}
+		asdasd
 	\end{frame}
 
 \end{document}
