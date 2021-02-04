@@ -8,26 +8,25 @@
 \logo{\includegraphics[height=0.8cm]{logo-small.jpg}}
 \institute[DISI]{Dipartimento di Ingegneria e Scienza dell'Informazione}
 
-% \AtBeginSection[] {
-%   \begin{frame}{Table of Contents}
-%     \tableofcontents[currentsection]
-%   \end{frame}
-% }
+\AtBeginSection[] {
+  \begin{frame}{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 % arara: pdflatex: { shell: yes, synctex: yes }
 % arara: latexmk: { clean: partial }
 \begin{document}
 	\begin{frame}[plain]
-		% \addtocounter{framenumber}{-1}
+		\addtocounter{framenumber}{-1}
 		\centering
 		\includegraphics[width=0.5\textwidth, keepaspectratio]{logo-unitn.eps}		
 		\titlepage
-		% \tableofcontents
 	\end{frame}
 
-	\begin{frame}{Table of Contents}
-    \tableofcontents
-  \end{frame}
+	% \begin{frame}{Table of Contents}
+	% 	\tableofcontents
+	% \end{frame}
 
 	\section{Introduzione e contesto}
 	\begin{frame}[fragile]{Che cos'è l'informatica?}
@@ -177,7 +176,7 @@
 			\item<3-> la ragione è semplice: \emph{l'università non mira a insegnarvi a programmare}
 			\item<4-> il motivo è sempre legato al discorso fatto prima
 			\item<5-> avrete comunque modo di fare progetti e imparare molto
-			\item<6-> ma se vi interessa solo quello, ci sono alternative migliori, meno costose e con meno sbatti
+			\item<6-> ma se vi interessa solo quello, ci sono alternative mirate, meno costose e senza quegli sbatti che sono tipici di un percorso accademico e che potrebbero risultare pesanti se non ne avete interesse
 			\begin{itemize}
 				\item<7-> \url{https://www.tecnicosuperiorekennedy.it/}
 				\item<7-> Corsi vari su Udemy e affini
@@ -197,35 +196,117 @@
 			\end{itemize}
 			\pause
 			\vfill
-			\LARGE{NO}
+			\huge{NO}
 			\pause
-			però in un certo senso \LARGE{SÌ}
+			\Large{però in un certo senso} \huge{SÌ}
 			\pause
-			però comunque \LARGE{NO}
+			\Large{però comunque} \huge{NO}
 			\pause
-			gnnnn diciamo \LARGE{DIPENDE}
+			\Large{gnnnn diciamo}\\ \centering\Huge{DIPENDE}
 	\end{frame}
 
-	\begin{frame}{Non ho mai \textit{$<$qualsiasi cosa non abbiate mai fatto$>$}, avrò difficoltà?}
-		asdasd
+	\begin{frame}{Ma io \textit{$<$qualsiasi presunto requisito sentiate di non avere$>$}, avrò difficoltà?}
+		Dove quei "presunti requisiti" potrebbero essere:
+		\begin{itemize}
+			\item apprezzare la matematica
+			\item aver già programmato 
+			\item incarnare lo stereotipo del nerd informatico boh idk
+		\end{itemize}
+		\pause
+		\vfill
+		\centering
+		no.
 	\end{frame}
 
 	\section{Come si studia}
-	\begin{frame}{Lezioni}
-		asdasd
+	\begin{frame}{Frequentare}
+		\begin{itemize}
+			\item<1-> Lezioni frontali tradizionali
+			\item<2-> Esercitazioni / laboratori
+			\item<3-> Sessioni di tutorato
+			\item<4-> Condivisione materiale su Moodle o siti proprietari
+			\item<5-> Comunicazione più giovane:
+			\begin{itemize}
+				\item Canale Telegram
+				\item Server Discord
+				\item Gruppi Slack
+				\item Tanta roba
+			\end{itemize}
+		\end{itemize}
+		\vfill
+		\visible<6->{
+			In periodo covid:
+			\begin{itemize}
+				\item lezioni sincrone \slash asincrone, a discrezione dei docenti
+				\item ci teniamo pure tutti i laboratori
+				\item live più dirette, sessioni di Q \& A, insomma ci si parla
+			\end{itemize}
+		}
 	\end{frame}
 
 	\begin{frame}{Risorse}
-		asdasd
+		\begin{itemize}
+			\item<1-> Internet
+			\item<2-> Internet
+			\item<3-> Internet
+		\end{itemize}
+		\vfill
+		\visible<4->{
+			Questo è valido in generale per tutta l'area STEM, ma soprattutto per informatica. \\
+			Non solo: imparare a cercare, leggere, studiare (e anche scrivere) documentazione è parte integrante della formazione.
+		}
+		\vfill
+		\visible<5->{
+			Disclaimer importante: il \(95\%\) di tutto questo sarà fatto solo ed esclusivametne in \alert{inglese}.	
+		}
 	\end{frame}
 
 	\begin{frame}{Autonomia}
-		asdasd
+		Occhio che questa cosa è molto molto molto molto molto molto molto importante
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\begin{alertblock}{Super tip per riuscire a imparare qualcosa}
+					Fate in modo che vi importi.\\
+					Fate le cose.\\
+					Da soli.\\
+				\end{alertblock}
+			\end{minipage}
+		\end{center}
 	\end{frame}
 
 	\section{Cosa si fa dopo}
-	\begin{frame}{Tutti lavorano tranne me}
-		asdasd
+	\begin{frame}{Tutti lavorano tranne me sad}
+		\begin{columns}
+			\begin{column}{0.4\textwidth}
+				\begin{itemize}
+					\item<1-> È vero che un laureato in informatica trova lavoro ez?
+					\begin{itemize}
+						\item<2-> Sì.
+					\end{itemize}
+					\item<3-> È vero che capita che lo trovi anche prima della laurea?
+					\begin{itemize}
+						\item<4-> Sì.
+					\end{itemize}
+					\item<5-> È vero che c'è molto interesse e mobilità anche nella ricerca?
+					\begin{itemize}
+						\item<6-> Sì.
+					\end{itemize}
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.6\textwidth}
+				\onslide<7>{
+					\centering
+					% \includegraphics[width=0.5\textwidth, keepaspectratio, frame]{fausto-v.jpeg}	
+				}
+				\end{column}
+		\end{columns}
+	\end{frame}
+
+	\section{Conclusione}
+	\begin{frame}{Conclusione}
+	Fioi domandate che altrimenti qua non si sa mai bene cosa sia meglio dire e cosa sia davvero utile
+	\vfill
+	contatti	
 	\end{frame}
 
 \end{document}
